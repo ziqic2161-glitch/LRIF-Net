@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the LRIF-Net article."
+title: "LRIF-Net: Reproducibility Code"
+type: software
+version: 1.0.0
+date-released: 2026-07-31
+authors:
+  - family-names: Chen
+    given-names: Ziqi
+  - family-names: Pan
+    given-names: Zhian
+  - family-names: Li
+    given-names: Shanshan
+  - family-names: Liu
+    given-names: Qingjie
+  - family-names: Li
+    given-names: Guan
+license: MIT
+

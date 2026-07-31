@@ -64,6 +64,10 @@ source of truth for paper numbers.
 
 This is a local/private release repository prepared for author and reviewer
 reproducibility. Before public release, replace any institution-specific access
-instructions with a stable repository or archive URL and add the final license
-chosen by all authors.
+instructions with a stable repository or archive URL.
 
+## License and citation
+
+The source code is released under the MIT License. This license does not apply
+to CrisisMMD or any other third-party dataset, image, model checkpoint, or
+publication content. Citation metadata are provided in `CITATION.cff`.
