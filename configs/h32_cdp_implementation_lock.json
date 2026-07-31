@@ -1,0 +1,39 @@
+{
+  "experiment_id": "H32-CDP",
+  "locked_at": "2026-07-20",
+  "scope": "implementation_and_seed3141_validation_only",
+  "sha256": {
+    "h32_rlif_model.py": "c57ab5ecb814702cff820fa90e52458a5a8e2727bf868c3ac40a2a04fb4f4db1",
+    "train_h32_rlif.py": "5f8610baed57af8320ee9fef6ad0f4ffc1d31eecaf9a2b9ce362a49dd3ab285e",
+    "train_h32_cdp.py": "b970b860e6b129a5c8edf71a60dc8b4226298fa23e3012d7f096c892094f94a9",
+    "audit_h32_cdp_run.py": "1e6c15d82fa207bd52c39eca6675201074ed12e27f1c9d0749bdfb4ff2073830",
+    "tests/test_h32_cdp.py": "2e2ce7613703e28326036d97dab9be3d7b3ab6a0d91da21461585adf47c103b8",
+    "tests/test_h32_rlif.py": "24e92951176b8095716fcdeb7a98107907aed1cc1c67124893f8b2772f7bcd87",
+    "docs/H32_CDP_PROTOCOL.md": "7797ee7cafc6045450b454bbe87a08311fdde964e4ea47891b3e36b031ba526c",
+    "configs/h32_cdp_v1.json": "925d535d9e70dcaffe99b63c0c6f66eb5e015b42625c2081b9f332a0a0c8efcd",
+    "train_pdlf_clip.py": "7b3b1afb52760811179b01e082189141c3f361f574da960f9856d4f15696c537"
+  },
+  "parent_seed3141_sha256": "f061d697828dee6f47b60ee5d2c790176b6f9904cd017fc5c879ee93f590a595",
+  "verification": {
+    "py_compile": "passed",
+    "focused_h32_cdp_and_h32_tests": "12 passed",
+    "full_project_tests": "240 passed",
+    "real_b1_seed3141_smoke": "passed",
+    "step_zero_max_logit_difference_all_conditions": 0.0,
+    "controlled_clean_distillation_positive": true,
+    "frozen_nonzero_gradient_count": 0,
+    "trainable_parameters": 517509,
+    "test_access": false
+  },
+  "completed_seed3141_artifacts": {
+    "best_model.pt": "aedb65eaa59356bb4e1303c3d6570d5946cb8dbfca6eb81b2978d132be1444f1",
+    "development_complete.json": "f0cb3aba14eddbc45042417d6472eb9959026b181311765f91eba4808d960cbf",
+    "h32_cdp_audit.json": "806aca351b5dc2a4d89683204532026a2e876ec5b30bb3b171a34a6a685eee5f"
+  },
+  "completed_seed1729_artifacts": {
+    "best_model.pt": "257d7ad90c584616d03576c271ad37b19c9080dcd230566c484395e438e6292a",
+    "development_complete.json": "2f112e9e17b1bcb4750c35912101f76b09617de6b9ce0b40806dd4b8518e8254",
+    "h32_cdp_audit.json": "5f74564c628c4ae0b8d62f16a7930b3ada0a0007b1d00c16c77c12f8e3793f8e"
+  },
+  "next_authorized_action": "run_seed2718_validation_only_manually"
+}

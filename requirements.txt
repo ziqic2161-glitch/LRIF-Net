@@ -1,0 +1,11 @@
+torch
+torchvision
+transformers==4.45.2
+huggingface-hub<1.0
+pandas
+numpy
+Pillow
+tqdm
+scikit-learn
+accelerate
+safetensors
