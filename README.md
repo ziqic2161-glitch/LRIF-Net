@@ -1,5 +1,7 @@
 # LRIF-Net: Reproducibility Code
 
+Repository: `https://github.com/ziqic2161-glitch/LRIF-Net`
+
 This repository contains the release code for **LRIF-Net (H32-CDP)**, the
 baseline-preserving residual multimodal fusion model described in the submitted
 SCI manuscript. It is intentionally limited to the final paper-facing method,
@@ -62,9 +64,9 @@ source of truth for paper numbers.
 
 ## Release status
 
-This is a local/private release repository prepared for author and reviewer
-reproducibility. Before public release, replace any institution-specific access
-instructions with a stable repository or archive URL.
+This public release repository is prepared for author and reviewer
+reproducibility. It contains no CrisisMMD data, social-media content,
+checkpoints, or institution-specific filesystem paths.
 
 ## License and citation
 
