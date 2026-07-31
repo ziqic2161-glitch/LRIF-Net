@@ -19,6 +19,8 @@ hard-coding private machine paths.
 ## Layout
 
 - `src/train_pdlf_clip.py`: frozen CLIP/B1 parent and dataset utilities.
+- `src/prepare_standard_7314.py`: validates the official label-consistent
+  CrisisMMD Task 2 TSV files and builds the canonical local CSV splits.
 - `src/h32_rlif_model.py`: recurrent latent interaction model.
 - `src/train_h32_rlif.py`: shared H32 data, corruption, loss, and evaluation code.
 - `src/train_h32_cdp.py`: locked clean-decision-preserved training entry point.
@@ -53,6 +55,23 @@ python -m pytest -q tests\test_h32_rlif.py tests\test_h32_cdp.py
 
 The tests use small dummy modules and are intended as implementation smoke
 checks. They are not substitutes for the locked validation protocol.
+
+## Local dataset preparation
+
+After obtaining the official CrisisMMD files under their original access
+conditions, prepare the canonical 7,314-pair split locally:
+
+```powershell
+python src\prepare_standard_7314.py `
+  --split-dir <directory-containing-task02-tsv-files> `
+  --image-root <crisismmd-image-root> `
+  --output-root <local-output-directory>
+```
+
+The script verifies the fixed class counts, label consistency, split-level
+image uniqueness, and image availability before writing local `train.csv`,
+`val.csv`, and `test.csv` files. These generated files may contain source
+dataset content and must not be committed or redistributed.
 
 ## Reproduction boundaries
 
